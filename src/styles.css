@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ===================== TÙY CHỈNH SITE ===================== */
+html { scroll-behavior: smooth; }
+section[id] { scroll-margin-top: 8.5rem; }
+
+/* Hiệu ứng hiện dần khi cuộn (chỉ bật khi có JS) */
+.js .reveal { opacity: 0; transform: translateY(26px); transition: opacity .7s ease, transform .7s ease; }
+.js .reveal.revealed { opacity: 1; transform: none; }
+
+/* Hiệu ứng "hơi thở" cho vòng tròn trang chủ */
+@keyframes breathe { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.07); } }
+@keyframes floaty { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-10px); } }
+.breathe { animation: breathe 6s ease-in-out infinite; }
+.floaty { animation: floaty 5s ease-in-out infinite; }
+.floaty-slow { animation: floaty 7s ease-in-out infinite; }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .breathe, .floaty, .floaty-slow { animation: none; }
+  .js .reveal { opacity: 1; transform: none; transition: none; }
+}

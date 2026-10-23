@@ -1,0 +1,991 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sống Khỏe – Không Khói Thuốc | Nói Không Với Thuốc Lá & Vape</title>
+  <meta name="description" content="Trang web tuyên truyền tác hại của thuốc lá và thuốc lá điện tử (vape/pod): sự thật khoa học, giải mã lầm tưởng, công cụ tính tiền tiết kiệm và lộ trình cai thuốc hiệu quả." />
+  <meta name="theme-color" content="#10b981" />
+
+  <!-- Open Graph / Twitter Card -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Sống Khỏe – Không Khói Thuốc" />
+  <meta property="og:url" content="https://song-khoe-xyz.vercel.app/" />
+  <meta property="og:title" content="Sống Khỏe – Không Khói Thuốc | Nói Không Với Thuốc Lá &amp; Vape" />
+  <meta property="og:description" content="Sự thật khoa học về thuốc lá & vape, giải mã lầm tưởng, công cụ tính tiền tiết kiệm và lộ trình cai thuốc hiệu quả." />
+  <meta property="og:image" content="https://song-khoe-xyz.vercel.app/images/og-image.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Sống Khỏe – Không Khói Thuốc: Nói không với thuốc lá và vape" />
+  <meta property="og:locale" content="vi_VN" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Sống Khỏe – Không Khói Thuốc | Nói Không Với Thuốc Lá &amp; Vape" />
+  <meta name="twitter:description" content="Sự thật khoa học về thuốc lá & vape, giải mã lầm tưởng, công cụ tính tiền tiết kiệm và lộ trình cai thuốc hiệu quả." />
+  <meta name="twitter:image" content="https://song-khoe-xyz.vercel.app/images/og-image.jpg" />
+
+  <!-- PWA -->
+  <link rel="manifest" href="manifest.json" />
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png" />
+  <script>document.documentElement.classList.add('js');</script>
+
+  <!-- Dữ liệu có cấu trúc SEO (JSON-LD) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Sống Khỏe – Không Khói Thuốc | Nói Không Với Thuốc Lá & Vape",
+    "url": "https://song-khoe-xyz.vercel.app/",
+    "inLanguage": "vi",
+    "description": "Trang web tuyên truyền tác hại của thuốc lá và thuốc lá điện tử (vape/pod): sự thật khoa học, giải mã lầm tưởng, công cụ tính tiền tiết kiệm và lộ trình cai thuốc hiệu quả.",
+    "about": [
+      { "@type": "MedicalCondition", "name": "Tác hại của thuốc lá" },
+      { "@type": "MedicalCondition", "name": "Tổn thương phổi do thuốc lá điện tử (EVALI)" }
+    ],
+    "publisher": {
+      "@type": "Organization",
+      "name": "Sống Khỏe – Không Khói Thuốc",
+      "logo": { "@type": "ImageObject", "url": "https://song-khoe-xyz.vercel.app/images/logo.png" }
+    }
+  }
+  </script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+
+  <!-- Tailwind CSS (đã build trước bằng Tailwind CLI. Bash lại sau khi sửa HTML/JS: npm run build:css) -->
+  <link rel="stylesheet" href="assets/css/main.min.css" />
+</head>
+
+<body class="font-sans text-slate-700 antialiased" data-share-title="Sống Khỏe – Không Khói Thuốc | Nói Không Với Thuốc Lá & Vape" data-share-text="Cùng tìm hiểu tác hại của thuốc lá & vape và nói KHÔNG với khói thuốc!">
+
+  <!-- ===================== HEADER / NAVIGATION ===================== -->
+  <header id="header" class="fixed inset-x-0 top-0 z-50 bg-white/90 shadow-md backdrop-blur transition-all duration-300">
+    <nav class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between py-3">
+        <a href="#trang-chu" class="flex items-center gap-2.5">
+          <img src="images/logo.png" alt="Logo Sống Khỏe" class="h-11 w-11 rounded-2xl shadow-lg shadow-emerald-500/25" />
+          <span class="leading-tight">
+            <span class="block font-display text-lg font-extrabold text-slate-900">Sống Khỏe</span>
+            <span class="block text-[11px] font-semibold uppercase tracking-widest text-emerald-600">Không Khói Thuốc · Không Ma Túy</span>
+          </span>
+        </a>
+
+        <!-- Tabs -->
+        <div class="hidden items-center gap-1 rounded-full border border-slate-200 bg-white p-1 shadow-sm md:flex">
+          <a href="index.html" class="rounded-full bg-emerald-600 px-4 py-1.5 text-sm font-bold text-white shadow">Trang chủ</a>
+          <a href="ma-tuy.html" class="rounded-full px-4 py-1.5 text-sm font-bold text-slate-600 transition hover:bg-emerald-50 hover:text-emerald-700">Phòng chống ma túy</a>
+        </div>
+
+        <div class="flex items-center gap-2">
+          <a href="tel:18006606" class="hidden items-center gap-2 rounded-full bg-emerald-600 px-4 py-2.5 text-sm font-bold text-white shadow-lg shadow-emerald-500/25 transition hover:bg-emerald-700 md:inline-flex">
+            <i class="fa-solid fa-phone-volume"></i> 1800 6606
+          </a>
+          <button id="menu-btn" type="button" aria-label="Mở menu" aria-expanded="false" class="flex h-11 w-11 items-center justify-center rounded-xl border border-slate-200 bg-white text-slate-700 transition hover:border-emerald-300 hover:text-emerald-700 lg:hidden">
+            <i id="icon-open" class="fa-solid fa-bars text-lg"></i>
+            <i id="icon-close" class="fa-solid fa-xmark hidden text-lg"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- Menu section (desktop) -->
+      <div class="hidden items-center gap-1 border-t border-slate-100 pb-2 pt-1.5 lg:flex">
+        <a href="#thuoc-la" class="nav-link rounded-full px-4 py-2 text-sm font-semibold text-slate-600 transition hover:bg-emerald-50 hover:text-emerald-700">Thuốc lá truyền thống</a>
+        <a href="#vape" class="nav-link rounded-full px-4 py-2 text-sm font-semibold text-slate-600 transition hover:bg-emerald-50 hover:text-emerald-700">Thuốc lá điện tử</a>
+        <a href="#su-that" class="nav-link rounded-full px-4 py-2 text-sm font-semibold text-slate-600 transition hover:bg-emerald-50 hover:text-emerald-700">So sánh & Sự thật</a>
+        <a href="#cai-thuoc" class="nav-link rounded-full px-4 py-2 text-sm font-semibold text-slate-600 transition hover:bg-emerald-50 hover:text-emerald-700">Cai thuốc</a>
+        <a href="#lien-he" class="nav-link rounded-full px-4 py-2 text-sm font-semibold text-slate-600 transition hover:bg-emerald-50 hover:text-emerald-700">Trợ giúp</a>
+        <a href="#thong-ke" class="nav-link rounded-full px-4 py-2 text-sm font-semibold text-slate-600 transition hover:bg-emerald-50 hover:text-emerald-700">Thống kê trực tiếp</a>
+        <a href="#nguon-tham-khao" class="nav-link rounded-full px-4 py-2 text-sm font-semibold text-slate-600 transition hover:bg-emerald-50 hover:text-emerald-700">Nguồn tham khảo</a>
+      </div>
+    </nav>
+
+    <!-- Menu mobile -->
+    <div id="mobile-menu" class="hidden border-t border-slate-100 bg-white/95 shadow-lg backdrop-blur lg:hidden">
+      <div class="px-4 pt-4">
+        <p class="text-[11px] font-bold uppercase tracking-widest text-slate-400">Chọn trang</p>
+        <div class="mt-2 grid grid-cols-2 gap-2">
+          <a href="index.html" class="rounded-xl bg-emerald-600 px-3 py-2.5 text-center text-sm font-bold text-white shadow"><i class="fa-solid fa-house mr-1"></i>Trang chủ</a>
+          <a href="ma-tuy.html" class="rounded-xl bg-slate-100 px-3 py-2.5 text-center text-sm font-bold text-slate-700 transition hover:bg-slate-200"><i class="fa-solid fa-shield-halved mr-1"></i>Phòng chống ma túy</a>
+        </div>
+      </div>
+      <ul class="space-y-1 px-4 py-4">
+        <li><a href="#thuoc-la" class="block rounded-xl px-4 py-2.5 text-sm font-semibold text-slate-700 transition hover:bg-emerald-50 hover:text-emerald-700"><i class="fa-solid fa-smoking mr-2 w-4 text-rose-500"></i>Thuốc lá truyền thống</a></li>
+        <li><a href="#vape" class="block rounded-xl px-4 py-2.5 text-sm font-semibold text-slate-700 transition hover:bg-emerald-50 hover:text-emerald-700"><i class="fa-solid fa-bolt mr-2 w-4 text-amber-500"></i>Thuốc lá điện tử</a></li>
+        <li><a href="#su-that" class="block rounded-xl px-4 py-2.5 text-sm font-semibold text-slate-700 transition hover:bg-emerald-50 hover:text-emerald-700"><i class="fa-solid fa-scale-balanced mr-2 w-4 text-sky-600"></i>So sánh & Sự thật</a></li>
+        <li><a href="#cai-thuoc" class="block rounded-xl px-4 py-2.5 text-sm font-semibold text-slate-700 transition hover:bg-emerald-50 hover:text-emerald-700"><i class="fa-solid fa-seedling mr-2 w-4 text-emerald-600"></i>Cai thuốc</a></li>
+        <li><a href="#lien-he" class="block rounded-xl px-4 py-2.5 text-sm font-semibold text-slate-700 transition hover:bg-emerald-50 hover:text-emerald-700"><i class="fa-solid fa-headset mr-2 w-4 text-indigo-500"></i>Trợ giúp</a></li>
+        <li><a href="#thong-ke" class="block rounded-xl px-4 py-2.5 text-sm font-semibold text-slate-700 transition hover:bg-emerald-50 hover:text-emerald-700"><i class="fa-solid fa-chart-line mr-2 w-4 text-emerald-600"></i>Thống kê trực tiếp</a></li>
+        <li><a href="#nguon-tham-khao" class="block rounded-xl px-4 py-2.5 text-sm font-semibold text-slate-700 transition hover:bg-emerald-50 hover:text-emerald-700"><i class="fa-solid fa-book-open mr-2 w-4 text-amber-500"></i>Nguồn tham khảo</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ===================== HERO SECTION ===================== -->
+    <section id="trang-chu" class="relative overflow-hidden bg-gradient-to-br from-emerald-50 via-sky-50/70 to-white pb-16 pt-32 lg:pb-24 lg:pt-40">
+      <div class="pointer-events-none absolute -right-24 -top-24 h-96 w-96 rounded-full bg-emerald-200/40 blur-3xl"></div>
+      <div class="pointer-events-none absolute -left-32 top-1/2 h-80 w-80 rounded-full bg-sky-200/40 blur-3xl"></div>
+
+      <div class="relative mx-auto grid max-w-7xl items-center gap-14 px-4 sm:px-6 lg:grid-cols-2 lg:gap-8 lg:px-8">
+        <div class="text-center lg:text-left">
+          <span class="inline-flex items-center gap-2 rounded-full border border-emerald-200 bg-white/80 px-4 py-1.5 text-xs font-bold uppercase tracking-wider text-emerald-700 shadow-sm">
+            <i class="fa-solid fa-leaf"></i> Chiến dịch sức khỏe cộng đồng
+          </span>
+          <h1 class="mt-5 font-display text-4xl font-black leading-tight text-slate-900 sm:text-5xl xl:text-6xl">
+            Thở Sạch – Sống Trọn:<br />
+            <span class="bg-gradient-to-r from-emerald-600 to-sky-600 bg-clip-text text-transparent">Nói Không Với Thuốc Lá &amp; Vape</span>
+          </h1>
+          <p class="mx-auto mt-5 max-w-xl text-base leading-relaxed text-slate-600 sm:text-lg lg:mx-0">
+            Mỗi hơi thở là một món quà. Hãy bảo vệ lá phổi của bạn và những người thân yêu khỏi khói thuốc — bắt đầu từ hôm nay để sống khỏe hơn, trọn vẹn hơn.
+          </p>
+          <div class="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row lg:justify-start">
+            <a href="#thuoc-la" class="group inline-flex w-full items-center justify-center gap-2 rounded-full bg-gradient-to-r from-emerald-600 to-emerald-500 px-7 py-3.5 text-base font-bold text-white shadow-lg shadow-emerald-500/30 transition hover:-translate-y-0.5 hover:shadow-xl sm:w-auto">
+              Tìm hiểu ngay
+              <i class="fa-solid fa-arrow-down transition-transform group-hover:translate-y-0.5"></i>
+            </a>
+            <a href="#cai-thuoc" class="inline-flex w-full items-center justify-center gap-2 rounded-full border-2 border-slate-900/10 bg-white px-7 py-3.5 text-base font-bold text-slate-800 shadow-sm transition hover:-translate-y-0.5 hover:border-emerald-400 hover:text-emerald-700 sm:w-auto">
+              <i class="fa-solid fa-calendar-check text-emerald-600"></i> Bắt đầu kế hoạch cai thuốc
+            </a>
+          </div>
+          <p class="mt-6 flex items-center justify-center gap-2 text-xs font-medium text-slate-500 lg:justify-start">
+            <i class="fa-solid fa-shield-heart text-emerald-600"></i> Nội dung tham khảo khuyến cáo của WHO &amp; Bộ Y tế Việt Nam
+          </p>
+        </div>
+
+        <!-- Minh họa "hơi thở" -->
+        <div class="relative mx-auto w-full max-w-md">
+          <div class="relative mx-auto aspect-square w-72 sm:w-80">
+            <div class="breathe absolute inset-0 rounded-full bg-gradient-to-br from-emerald-400 via-teal-300 to-sky-400 opacity-90 shadow-2xl shadow-emerald-500/30"></div>
+            <div class="absolute inset-8 flex flex-col items-center justify-center rounded-full bg-white/90 text-center backdrop-blur">
+              <i class="fa-solid fa-lungs text-6xl text-emerald-600"></i>
+              <p class="mt-3 font-display text-2xl font-black text-slate-900">Không Khói Thuốc</p>
+              <p class="text-sm font-semibold text-emerald-600">= Hơi thở khỏe mạnh</p>
+            </div>
+          </div>
+          <div class="floaty absolute -left-2 top-8 flex items-center gap-2 rounded-2xl border border-slate-100 bg-white px-4 py-2.5 shadow-lg shadow-slate-900/10 sm:-left-8">
+            <i class="fa-solid fa-ban text-rose-500"></i>
+            <span class="text-xs font-bold text-slate-800 sm:text-sm">Không thuốc lá</span>
+          </div>
+          <div class="floaty-slow absolute -right-2 top-28 flex items-center gap-2 rounded-2xl border border-slate-100 bg-white px-4 py-2.5 shadow-lg shadow-slate-900/10 sm:-right-8">
+            <i class="fa-solid fa-heart text-emerald-600"></i>
+            <span class="text-xs font-bold text-slate-800 sm:text-sm">Tim khỏe mạnh</span>
+          </div>
+          <div class="floaty absolute -left-2 bottom-20 flex items-center gap-2 rounded-2xl border border-slate-100 bg-white px-4 py-2.5 shadow-lg shadow-slate-900/10 sm:-left-10">
+            <i class="fa-solid fa-wallet text-sky-600"></i>
+            <span class="text-xs font-bold text-slate-800 sm:text-sm">Tiết kiệm mỗi ngày</span>
+          </div>
+          <div class="floaty-slow absolute -right-2 bottom-4 flex items-center gap-2 rounded-2xl border border-slate-100 bg-white px-4 py-2.5 shadow-lg shadow-slate-900/10 sm:-right-6">
+            <i class="fa-solid fa-face-smile text-amber-500"></i>
+            <span class="text-xs font-bold text-slate-800 sm:text-sm">Hơi thở thơm mát</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Dải thống kê -->
+      <div class="relative mx-auto mt-16 max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-2 gap-6 rounded-3xl border border-slate-100 bg-white/80 p-6 shadow-xl shadow-slate-900/5 backdrop-blur sm:grid-cols-4 lg:gap-8 lg:p-8">
+          <div class="text-center">
+            <p class="font-display text-3xl font-black text-slate-900 lg:text-4xl"><span data-count="8">8</span> <span class="text-emerald-600">triệu+</span></p>
+            <p class="mt-1 text-xs font-medium leading-snug text-slate-500 sm:text-sm">người tử vong mỗi năm do thuốc lá (WHO)</p>
+          </div>
+          <div class="text-center">
+            <p class="font-display text-3xl font-black text-slate-900 lg:text-4xl"><span data-count="7000">7.000</span><span class="text-emerald-600">+</span></p>
+            <p class="mt-1 text-xs font-medium leading-snug text-slate-500 sm:text-sm">hóa chất độc hại trong khói thuốc</p>
+          </div>
+          <div class="text-center">
+            <p class="font-display text-3xl font-black text-slate-900 lg:text-4xl"><span data-count="70">70</span><span class="text-emerald-600">+</span></p>
+            <p class="mt-1 text-xs font-medium leading-snug text-slate-500 sm:text-sm">chất gây ung thư đã được xác định</p>
+          </div>
+          <div class="text-center">
+            <p class="font-display text-3xl font-black text-slate-900 lg:text-4xl"><span data-count="8">8</span><span class="text-emerald-600">%</span></p>
+            <p class="mt-1 text-xs font-medium leading-snug text-slate-500 sm:text-sm">học sinh 13–15 tuổi đã dùng vape (VN, 2023)</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== THỐNG KÊ THỜI GIAN THỰC ===================== -->
+    <section id="thong-ke" class="relative overflow-hidden bg-gradient-to-br from-emerald-950 via-slate-900 to-slate-950 py-20 text-white lg:py-24">
+      <div class="pointer-events-none absolute -left-24 top-0 h-72 w-72 rounded-full bg-emerald-500/10 blur-3xl"></div>
+      <div class="pointer-events-none absolute -right-24 bottom-0 h-72 w-72 rounded-full bg-rose-500/10 blur-3xl"></div>
+
+      <div class="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="reveal mx-auto max-w-2xl text-center">
+          <span class="inline-flex items-center gap-2 rounded-full border border-emerald-400/40 bg-emerald-500/10 px-4 py-1.5 text-xs font-bold uppercase tracking-widest text-emerald-300">
+            <span class="relative flex h-2 w-2">
+              <span class="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-400 opacity-75"></span>
+              <span class="relative inline-flex h-2 w-2 rounded-full bg-emerald-400"></span>
+            </span>
+            Số liệu thời gian thực · Trực tiếp
+          </span>
+          <h2 class="mt-4 font-display text-3xl font-black sm:text-4xl lg:text-5xl">
+            Những Con Số <span class="text-emerald-400">Vẫn Đang Tăng</span>
+          </h2>
+          <p class="mt-4 text-slate-300">
+            Ước tính từ đầu năm <span id="nam-thong-ke">2026</span> đến thời điểm này, dựa trên dữ liệu của WHO, Tobacco Atlas và Bộ Y tế Việt Nam.
+          </p>
+        </div>
+
+        <div class="mt-12 grid gap-5 sm:grid-cols-2 xl:grid-cols-4">
+          <article class="reveal rounded-3xl border border-white/10 bg-white/5 p-6 text-center backdrop-blur">
+            <div class="mx-auto flex h-12 w-12 items-center justify-center rounded-2xl bg-rose-500/15 text-xl text-rose-400"><i class="fa-solid fa-skull-crossbones"></i></div>
+            <p class="mt-4 font-display text-2xl font-black tabular-nums tracking-tight text-white sm:text-3xl"><span id="tk-toan-cau">0</span></p>
+            <p class="mt-1 text-xs font-semibold uppercase tracking-wider text-slate-400">Ca tử vong toàn cầu do thuốc lá</p>
+            <p class="mt-3 inline-flex items-center gap-1.5 rounded-full bg-white/5 px-3 py-1 text-[11px] text-slate-400"><i class="fa-solid fa-globe"></i> ~8 triệu/năm · WHO</p>
+          </article>
+
+          <article class="reveal rounded-3xl border border-white/10 bg-white/5 p-6 text-center backdrop-blur" style="transition-delay:80ms">
+            <div class="mx-auto flex h-12 w-12 items-center justify-center rounded-2xl bg-amber-500/15 text-xl text-amber-400"><i class="fa-solid fa-smoking"></i></div>
+            <p class="mt-4 font-display text-xl font-black tabular-nums tracking-tight text-white sm:text-2xl"><span id="tk-dieu-thuoc">0</span></p>
+            <p class="mt-1 text-xs font-semibold uppercase tracking-wider text-slate-400">Điếu thuốc được hút trên toàn cầu</p>
+            <p class="mt-3 inline-flex items-center gap-1.5 rounded-full bg-white/5 px-3 py-1 text-[11px] text-slate-400"><i class="fa-solid fa-globe"></i> ~5,7 nghìn tỷ/năm · Tobacco Atlas</p>
+          </article>
+
+          <article class="reveal rounded-3xl border border-white/10 bg-white/5 p-6 text-center backdrop-blur" style="transition-delay:160ms">
+            <div class="mx-auto flex h-12 w-12 items-center justify-center rounded-2xl bg-sky-500/15 text-xl text-sky-400"><i class="fa-solid fa-map-location-dot"></i></div>
+            <p class="mt-4 font-display text-2xl font-black tabular-nums tracking-tight text-white sm:text-3xl"><span id="tk-viet-nam">0</span></p>
+            <p class="mt-1 text-xs font-semibold uppercase tracking-wider text-slate-400">Ca tử vong tại Việt Nam</p>
+            <p class="mt-3 inline-flex items-center gap-1.5 rounded-full bg-white/5 px-3 py-1 text-[11px] text-slate-400"><i class="fa-solid fa-flag"></i> ~40.000/năm · Bộ Y tế</p>
+          </article>
+
+          <article class="reveal rounded-3xl border border-white/10 bg-white/5 p-6 text-center backdrop-blur" style="transition-delay:240ms">
+            <div class="mx-auto flex h-12 w-12 items-center justify-center rounded-2xl bg-rose-500/15 text-xl text-rose-400"><i class="fa-solid fa-people-group"></i></div>
+            <p class="mt-4 font-display text-2xl font-black tabular-nums tracking-tight text-white sm:text-3xl"><span id="tk-thu-dong">0</span></p>
+            <p class="mt-1 text-xs font-semibold uppercase tracking-wider text-slate-400">Tử vong do hút thuốc thụ động</p>
+            <p class="mt-3 inline-flex items-center gap-1.5 rounded-full bg-white/5 px-3 py-1 text-[11px] text-slate-400"><i class="fa-solid fa-globe"></i> ~1,3 triệu/năm · WHO</p>
+          </article>
+        </div>
+
+        <p class="reveal mt-8 text-center text-sm text-slate-400">
+          <i class="fa-solid fa-hourglass-half mr-1.5 text-emerald-400"></i>
+          Trung bình cứ <b class="text-white">4 giây</b> có 1 người tử vong do thuốc lá trên thế giới — và cứ <b class="text-white">13 phút</b> có 1 người Việt tử vong vì bệnh liên quan đến thuốc lá.
+        </p>
+      </div>
+    </section>
+
+    <!-- ===================== SECTION 1: THUỐC LÁ TRUYỀN THỐNG ===================== -->
+    <section id="thuoc-la" class="py-20 lg:py-28">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="reveal mx-auto max-w-2xl text-center">
+          <span class="inline-flex items-center gap-2 rounded-full bg-rose-100 px-4 py-1.5 text-xs font-bold uppercase tracking-widest text-rose-600">
+            <i class="fa-solid fa-smoking"></i> Phần 01 · Thuốc lá truyền thống
+          </span>
+          <h2 class="mt-4 font-display text-3xl font-black text-slate-900 sm:text-4xl lg:text-5xl">
+            Tác Hại Của <span class="text-rose-600">Thuốc Lá Truyền Thống</span>
+          </h2>
+          <p class="mt-4 text-slate-600">
+            Khói thuốc lá chứa hơn 7.000 hóa chất, trong đó ít nhất 70 chất gây ung thư. Không có mức độ hút thuốc nào là “an toàn”.
+          </p>
+        </div>
+
+        <div class="mt-12 grid gap-6 sm:grid-cols-2 xl:grid-cols-4">
+          <article class="reveal group relative overflow-hidden rounded-3xl border border-slate-100 bg-white p-6 shadow-lg shadow-slate-900/5 transition duration-300 hover:-translate-y-2 hover:border-emerald-200 hover:shadow-2xl hover:shadow-emerald-500/10">
+            <span class="absolute -right-8 -top-8 h-28 w-28 rounded-full bg-rose-50 opacity-0 transition group-hover:opacity-100"></span>
+            <div class="relative">
+              <div class="flex h-14 w-14 items-center justify-center rounded-2xl bg-rose-100 text-2xl text-rose-600"><i class="fa-solid fa-lungs"></i></div>
+              <h3 class="mt-5 font-display text-lg font-extrabold text-slate-900">Ung thư phổi</h3>
+              <p class="mt-2 text-sm leading-relaxed text-slate-600">Hút thuốc là nguyên nhân hàng đầu gây ung thư phổi; nguy cơ tăng dần theo số năm và số điếu hút mỗi ngày.</p>
+              <p class="mt-4 inline-flex items-center gap-2 rounded-full bg-rose-50 px-3 py-1.5 text-xs font-bold text-rose-600"><i class="fa-solid fa-triangle-exclamation"></i> 90% ca ung thư phổi</p>
+            </div>
+          </article>
+
+          <article class="reveal group relative overflow-hidden rounded-3xl border border-slate-100 bg-white p-6 shadow-lg shadow-slate-900/5 transition duration-300 hover:-translate-y-2 hover:border-emerald-200 hover:shadow-2xl hover:shadow-emerald-500/10" style="transition-delay:80ms">
+            <span class="absolute -right-8 -top-8 h-28 w-28 rounded-full bg-red-50 opacity-0 transition group-hover:opacity-100"></span>
+            <div class="relative">
+              <div class="flex h-14 w-14 items-center justify-center rounded-2xl bg-red-100 text-2xl text-red-600"><i class="fa-solid fa-heart-pulse"></i></div>
+              <h3 class="mt-5 font-display text-lg font-extrabold text-slate-900">Bệnh tim mạch &amp; đột quỵ</h3>
+              <p class="mt-2 text-sm leading-relaxed text-slate-600">Nicotine làm co mạch, tăng huyết áp và nhịp tim, thúc đẩy xơ vữa động mạch — con đường ngắn nhất đến nhồi máu cơ tim và đột quỵ.</p>
+              <p class="mt-4 inline-flex items-center gap-2 rounded-full bg-red-50 px-3 py-1.5 text-xs font-bold text-red-600"><i class="fa-solid fa-triangle-exclamation"></i> Nguy cơ đau tim gấp 2–4 lần</p>
+            </div>
+          </article>
+
+          <article class="reveal group relative overflow-hidden rounded-3xl border border-slate-100 bg-white p-6 shadow-lg shadow-slate-900/5 transition duration-300 hover:-translate-y-2 hover:border-emerald-200 hover:shadow-2xl hover:shadow-emerald-500/10" style="transition-delay:160ms">
+            <span class="absolute -right-8 -top-8 h-28 w-28 rounded-full bg-orange-50 opacity-0 transition group-hover:opacity-100"></span>
+            <div class="relative">
+              <div class="flex h-14 w-14 items-center justify-center rounded-2xl bg-orange-100 text-2xl text-orange-600"><i class="fa-solid fa-clock-rotate-left"></i></div>
+              <h3 class="mt-5 font-display text-lg font-extrabold text-slate-900">Lão hóa sớm</h3>
+              <p class="mt-2 text-sm leading-relaxed text-slate-600">Da nhăn nheo, vàng răng, hơi thở có mùi, giảm thị lực, loãng xương… Người hút thuốc thường trông già hơn tuổi thật rất nhiều.</p>
+              <p class="mt-4 inline-flex items-center gap-2 rounded-full bg-orange-50 px-3 py-1.5 text-xs font-bold text-orange-600"><i class="fa-solid fa-triangle-exclamation"></i> Giảm ~10 năm tuổi thọ</p>
+            </div>
+          </article>
+
+          <article class="reveal group relative overflow-hidden rounded-3xl border border-slate-100 bg-white p-6 shadow-lg shadow-slate-900/5 transition duration-300 hover:-translate-y-2 hover:border-emerald-200 hover:shadow-2xl hover:shadow-emerald-500/10" style="transition-delay:240ms">
+            <span class="absolute -right-8 -top-8 h-28 w-28 rounded-full bg-amber-50 opacity-0 transition group-hover:opacity-100"></span>
+            <div class="relative">
+              <div class="flex h-14 w-14 items-center justify-center rounded-2xl bg-amber-100 text-2xl text-amber-600"><i class="fa-solid fa-people-arrows"></i></div>
+              <h3 class="mt-5 font-display text-lg font-extrabold text-slate-900">Hút thuốc thụ động</h3>
+              <p class="mt-2 text-sm leading-relaxed text-slate-600">Khói thuốc bạn nhả ra gây hại cho gia đình, đặc biệt là trẻ em và phụ nữ mang thai — ngay cả khi họ không hề hút.</p>
+              <p class="mt-4 inline-flex items-center gap-2 rounded-full bg-amber-50 px-3 py-1.5 text-xs font-bold text-amber-600"><i class="fa-solid fa-triangle-exclamation"></i> 1,3 triệu người tử vong/năm</p>
+            </div>
+          </article>
+        </div>
+
+        <figure class="reveal mx-auto mt-12 max-w-4xl overflow-hidden rounded-3xl border border-slate-100 bg-white shadow-xl shadow-slate-900/10">
+          <img src="images/smokers-lungs.jpg" alt="So sánh phổi người hút thuốc (đen, teo nhỏ) và phổi khỏe mạnh (hồng) trong buổi trưng bày giáo dục sức khỏe" class="h-72 w-full object-cover sm:h-96" loading="lazy" />
+          <figcaption class="flex flex-col gap-1 px-5 py-4 sm:flex-row sm:items-center sm:justify-between">
+            <div>
+              <p class="text-sm font-bold text-slate-900"><i class="fa-solid fa-lungs mr-1.5 text-rose-500"></i>Phổi người hút thuốc (trái) so với phổi khỏe mạnh (phải)</p>
+              <p class="mt-1 text-xs text-slate-500">Mô hình mô phỏng tại buổi giáo dục sức khỏe — phổi người hút thuốc chuyển đen và teo nhỏ vì hắc ín tích tụ nhiều năm.</p>
+            </div>
+            <p class="shrink-0 text-[11px] text-slate-400"><i class="fa-solid fa-camera mr-1"></i>Nguồn: Alfonso Lucifredi — CC BY-SA 4.0, qua Wikimedia Commons.</p>
+          </figcaption>
+        </figure>
+
+        <div class="reveal mt-10 flex flex-col items-center justify-between gap-4 rounded-3xl bg-gradient-to-r from-rose-600 to-red-500 px-6 py-6 text-white shadow-xl shadow-rose-500/25 sm:flex-row lg:px-10">
+          <p class="flex items-center gap-3 text-center font-semibold sm:text-left">
+            <i class="fa-solid fa-stopwatch text-2xl"></i>
+            Mỗi điếu thuốc làm mất đi khoảng <b class="mx-1 text-amber-200">11 phút tuổi thọ</b> của bạn.
+          </p>
+          <a href="#su-that" class="shrink-0 rounded-full bg-white px-5 py-2.5 text-sm font-bold text-rose-600 transition hover:bg-rose-50">
+            Kiểm chứng sự thật <i class="fa-solid fa-arrow-right ml-1"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== SECTION 2: THUỐC LÁ ĐIỆN TỬ (VAPE) ===================== -->
+    <section id="vape" class="relative overflow-hidden bg-slate-900 py-20 text-white lg:py-28">
+      <div class="pointer-events-none absolute -top-32 left-1/2 h-96 w-96 -translate-x-1/2 rounded-full bg-rose-500/10 blur-3xl"></div>
+      <div class="pointer-events-none absolute -bottom-32 -right-24 h-80 w-80 rounded-full bg-sky-500/10 blur-3xl"></div>
+
+      <div class="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="reveal mx-auto max-w-2xl text-center">
+          <span class="inline-flex items-center gap-2 rounded-full border border-rose-500/40 bg-rose-500/10 px-4 py-1.5 text-xs font-bold uppercase tracking-widest text-rose-400">
+            <i class="fa-solid fa-triangle-exclamation"></i> Cảnh báo · Phần 02
+          </span>
+          <h2 class="mt-4 font-display text-3xl font-black sm:text-4xl lg:text-5xl">
+            Thuốc Lá Điện Tử <span class="text-rose-400">(Vape / Pod)</span> — Cạm Bẫy Mới
+          </h2>
+          <p class="mt-4 text-slate-300">
+            <b class="text-rose-300">Vape KHÔNG hề an toàn như quảng cáo.</b> Đằng sau vẻ ngoài thời thượng, hương thơm trái cây là một “cỗ máy” gây nghiện và tàn phá sức khỏe — đặc biệt với giới trẻ.
+          </p>
+        </div>
+
+        <div class="mt-12 grid gap-6 sm:grid-cols-2 xl:grid-cols-4">
+          <article class="reveal rounded-3xl border border-white/10 bg-white/5 p-6 backdrop-blur transition duration-300 hover:-translate-y-2 hover:border-rose-500/40 hover:bg-white/10">
+            <div class="flex h-14 w-14 items-center justify-center rounded-2xl bg-rose-500/15 text-2xl text-rose-400"><i class="fa-solid fa-lungs-virus"></i></div>
+            <h3 class="mt-5 font-display text-lg font-extrabold">Tổn thương phổi cấp (EVALI)</h3>
+            <p class="mt-2 text-sm leading-relaxed text-slate-300">Hàng nghìn ca tổn thương phổi cấp liên quan đến vape đã được ghi nhận toàn cầu, trong đó có nhiều ca tử vong ở người trẻ tuổi.</p>
+          </article>
+
+          <article class="reveal rounded-3xl border border-white/10 bg-white/5 p-6 backdrop-blur transition duration-300 hover:-translate-y-2 hover:border-amber-400/40 hover:bg-white/10" style="transition-delay:80ms">
+            <div class="flex h-14 w-14 items-center justify-center rounded-2xl bg-amber-500/15 text-2xl text-amber-400"><i class="fa-solid fa-plug-circle-bolt"></i></div>
+            <h3 class="mt-5 font-display text-lg font-extrabold">Nguy cơ cháy nổ</h3>
+            <p class="mt-2 text-sm leading-relaxed text-slate-300">Pin lithium kém chất lượng có thể phát nổ ngay trong miệng hoặc túi quần, gây bỏng nặng, mù lòa, thậm chí tử vong.</p>
+          </article>
+
+          <article class="reveal rounded-3xl border border-white/10 bg-white/5 p-6 backdrop-blur transition duration-300 hover:-translate-y-2 hover:border-rose-500/40 hover:bg-white/10" style="transition-delay:160ms">
+            <div class="flex h-14 w-14 items-center justify-center rounded-2xl bg-rose-500/15 text-2xl text-rose-400"><i class="fa-solid fa-brain"></i></div>
+            <h3 class="mt-5 font-display text-lg font-extrabold">Gây nghiện cực mạnh ở giới trẻ</h3>
+            <p class="mt-2 text-sm leading-relaxed text-slate-300">Nicotine dạng muối trong pod cho cảm giác “êm” nhưng nồng độ rất cao, khiến giới trẻ nghiện nhanh và khó cai hơn thuốc lá thường.</p>
+          </article>
+
+          <article class="reveal rounded-3xl border border-white/10 bg-white/5 p-6 backdrop-blur transition duration-300 hover:-translate-y-2 hover:border-amber-400/40 hover:bg-white/10" style="transition-delay:240ms">
+            <div class="flex h-14 w-14 items-center justify-center rounded-2xl bg-amber-500/15 text-2xl text-amber-400"><i class="fa-solid fa-flask-vial"></i></div>
+            <h3 class="mt-5 font-display text-lg font-extrabold">Hóa chất độc hại tích tụ</h3>
+            <p class="mt-2 text-sm leading-relaxed text-slate-300">Khí dung vape chứa kim loại nặng (chì, niken, crom), diacetyl gây bệnh phổi, formaldehyde… âm thầm tích tụ lâu dài trong cơ thể.</p>
+          </article>
+        </div>
+
+        <div class="reveal mt-12 rounded-3xl border border-rose-500/30 bg-gradient-to-r from-rose-950/80 to-slate-900 p-6 sm:p-8">
+          <div class="grid items-center gap-6 text-center sm:grid-cols-[1fr_auto_1fr] sm:text-left">
+            <div>
+              <p class="text-xs font-bold uppercase tracking-widest text-slate-400">Năm 2022</p>
+              <p class="mt-1 font-display text-4xl font-black text-slate-300 sm:text-5xl">3,5%</p>
+              <p class="mt-1 text-xs text-slate-400">học sinh 13–15 tuổi sử dụng thuốc lá điện tử</p>
+            </div>
+            <div class="flex items-center justify-center gap-2 rounded-full border border-rose-500/40 bg-rose-500/10 px-5 py-3 font-bold text-rose-400">
+              <i class="fa-solid fa-arrow-trend-up"></i> Gấp hơn 2 lần
+            </div>
+            <div>
+              <p class="text-xs font-bold uppercase tracking-widest text-slate-400">Năm 2023</p>
+              <p class="mt-1 font-display text-4xl font-black text-rose-400 sm:text-5xl">8%</p>
+              <p class="mt-1 text-xs text-slate-400">chỉ sau 1 năm — Theo Bộ Y tế Việt Nam</p>
+            </div>
+          </div>
+          <p class="mt-6 text-center text-sm text-slate-400">
+            Khí dung (aerosol) của vape <b class="text-rose-300">không phải “hơi nước vô hại”</b> — nó chứa nicotine, kim loại nặng và nhiều hóa chất độc hại.
+          </p>
+        </div>
+
+        <div class="mt-12 grid gap-6 md:grid-cols-2">
+          <figure class="reveal overflow-hidden rounded-3xl border border-white/10 bg-white/5">
+            <img src="images/evali-lung.jpg" alt="Minh họa phổi bị tổn thương cấp do thuốc lá điện tử (EVALI) của CDC Hoa Kỳ" class="h-64 w-full object-cover" loading="lazy" />
+            <figcaption class="px-5 py-4">
+              <p class="text-sm font-bold text-white"><i class="fa-solid fa-lungs-virus mr-1.5 text-rose-400"></i>Phổi tổn thương vì vape (EVALI)</p>
+              <p class="mt-1 text-xs leading-relaxed text-slate-300">Ảnh minh họa tổn thương phổi cấp do thuốc lá điện tử — hội chứng EVALI đã khiến nhiều người trẻ tử vong.</p>
+              <p class="mt-2 text-[11px] leading-relaxed text-slate-400"><i class="fa-solid fa-camera mr-1"></i>Nguồn: Trung tâm Kiểm soát Bệnh tật Hoa Kỳ (CDC) — Public domain, qua Wikimedia Commons.</p>
+            </figcaption>
+          </figure>
+          <figure class="reveal overflow-hidden rounded-3xl border border-white/10 bg-white/5" style="transition-delay:80ms">
+            <div class="flex h-64 items-center justify-center bg-black p-4">
+              <img src="images/evali-ct.gif" alt="Ảnh chụp cắt lớp (CT) phổi của bệnh nhân EVALI — CDC MMWR" class="h-full w-auto object-contain" loading="lazy" />
+            </div>
+            <figcaption class="px-5 py-4">
+              <p class="text-sm font-bold text-white"><i class="fa-solid fa-x-ray mr-1.5 text-sky-400"></i>CT phổi bệnh nhân EVALI</p>
+              <p class="mt-1 text-xs leading-relaxed text-slate-300">Ảnh chụp cắt lớp cho thấy tổn thương lan tỏa ở phổi bệnh nhân trẻ dùng vape.</p>
+              <p class="mt-2 text-[11px] leading-relaxed text-slate-400"><i class="fa-solid fa-camera mr-1"></i>Nguồn: CDC Hoa Kỳ — Báo cáo MMWR (Public domain), qua Wikimedia Commons.</p>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== SECTION 3: SO SÁNH & MYTH BUSTERS ===================== -->
+    <section id="su-that" class="py-20 lg:py-28">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="reveal mx-auto max-w-2xl text-center">
+          <span class="inline-flex items-center gap-2 rounded-full bg-sky-100 px-4 py-1.5 text-xs font-bold uppercase tracking-widest text-sky-700">
+            <i class="fa-solid fa-scale-balanced"></i> Phần 03 · So sánh &amp; Sự thật
+          </span>
+          <h2 class="mt-4 font-display text-3xl font-black text-slate-900 sm:text-4xl lg:text-5xl">
+            So Sánh &amp; <span class="text-sky-600">Giải Mã Lầm Tưởng</span>
+          </h2>
+          <p class="mt-4 text-slate-600">Cùng kiểm chứng những lời đồn phổ biến về thuốc lá và vape bằng khoa học.</p>
+        </div>
+
+        <!-- Bảng so sánh -->
+        <div class="reveal mx-auto mt-12 max-w-4xl overflow-hidden rounded-3xl border border-slate-200 shadow-xl shadow-slate-900/5">
+          <div class="overflow-x-auto">
+            <table class="w-full min-w-[680px] text-left text-sm">
+              <thead class="bg-slate-900 text-white">
+                <tr>
+                  <th class="px-5 py-4 font-display text-sm font-bold">Tiêu chí</th>
+                  <th class="px-5 py-4 font-display text-sm font-bold">Thuốc lá truyền thống</th>
+                  <th class="px-5 py-4 font-display text-sm font-bold">Thuốc lá điện tử (Vape)</th>
+                </tr>
+              </thead>
+              <tbody class="divide-y divide-slate-100 bg-white">
+                <tr>
+                  <td class="px-5 py-4 font-semibold text-slate-900">Chất gây ung thư</td>
+                  <td class="px-5 py-4 align-top"><i class="fa-solid fa-circle-xmark mr-1.5 text-rose-500"></i>70+ chất đã được xác định</td>
+                  <td class="px-5 py-4 align-top"><i class="fa-solid fa-circle-xmark mr-1.5 text-rose-500"></i>Chứa formaldehyde, acrolein, nitrosamine…</td>
+                </tr>
+                <tr class="bg-slate-50/50">
+                  <td class="px-5 py-4 font-semibold text-slate-900">Nicotine (chất gây nghiện)</td>
+                  <td class="px-5 py-4 align-top"><i class="fa-solid fa-circle-xmark mr-1.5 text-rose-500"></i>Có — gây nghiện</td>
+                  <td class="px-5 py-4 align-top"><i class="fa-solid fa-circle-xmark mr-1.5 text-rose-500"></i>Có — dạng muối hấp thu nhanh, nồng độ rất cao</td>
+                </tr>
+                <tr>
+                  <td class="px-5 py-4 font-semibold text-slate-900">Tồn tại trong không khí</td>
+                  <td class="px-5 py-4 align-top">Khói + tàn thuốc + mùi ám lâu</td>
+                  <td class="px-5 py-4 align-top">Khí dung (aerosol) + hương liệu nhân tạo</td>
+                </tr>
+                <tr class="bg-slate-50/50">
+                  <td class="px-5 py-4 font-semibold text-slate-900">Ảnh hưởng người xung quanh</td>
+                  <td class="px-5 py-4 align-top">Gây hút thuốc thụ động cho người thân</td>
+                  <td class="px-5 py-4 align-top">Phơi nhiễm khí dung thụ động, đặc biệt là trẻ em</td>
+                </tr>
+                <tr>
+                  <td class="px-5 py-4 font-semibold text-slate-900">Nguy cơ khác</td>
+                  <td class="px-5 py-4 align-top">Cháy nhà, hỏa hoạn do tàn thuốc</td>
+                  <td class="px-5 py-4 align-top">Cháy nổ pin lithium, bỏng hóa chất</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="bg-rose-50 px-5 py-4 text-center text-sm font-bold text-rose-700">
+            <i class="fa-solid fa-circle-info mr-1"></i> Kết luận: Cả hai đều gây nghiện và gây hại — KHÔNG có sản phẩm thuốc lá nào là an toàn.
+          </div>
+        </div>
+
+        <!-- Myth Busters Accordion -->
+        <div class="mx-auto mt-16 max-w-3xl">
+          <h3 class="reveal text-center font-display text-2xl font-extrabold text-slate-900">
+            Myth Busters — Điều Bạn Nghe <span class="text-rose-600">vs</span> Sự Thật
+          </h3>
+
+          <div class="mt-8 space-y-4">
+            <div class="accordion-item open overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm transition hover:border-emerald-300">
+              <button type="button" class="accordion-btn flex w-full items-center justify-between gap-4 px-5 py-4 text-left" aria-expanded="true">
+                <span class="flex items-start gap-3">
+                  <span class="mt-0.5 flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-rose-100 text-rose-600"><i class="fa-solid fa-comment"></i></span>
+                  <span class="font-display text-sm font-bold text-slate-900 sm:text-base">“Vape chỉ là hơi nước thơm.”</span>
+                </span>
+                <i class="accordion-icon fa-solid fa-chevron-down rotate-180 text-slate-400 transition-transform duration-300"></i>
+              </button>
+              <div class="accordion-content grid grid-rows-[1fr] transition-all duration-300">
+                <div class="overflow-hidden">
+                  <div class="border-t border-dashed border-slate-200 px-5 py-4 sm:pl-16">
+                    <p class="flex items-start gap-3 text-sm leading-relaxed text-slate-600">
+                      <span class="mt-0.5 flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-emerald-100 text-emerald-600"><i class="fa-solid fa-check"></i></span>
+                      <span><b class="text-emerald-700">Sự thật:</b> Đó là khí dung (aerosol) chứa nicotine, kim loại nặng như chì, niken và các hóa chất tạo hương — không phải “hơi nước” vô hại.</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm transition hover:border-emerald-300">
+              <button type="button" class="accordion-btn flex w-full items-center justify-between gap-4 px-5 py-4 text-left" aria-expanded="false">
+                <span class="flex items-start gap-3">
+                  <span class="mt-0.5 flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-rose-100 text-rose-600"><i class="fa-solid fa-comment"></i></span>
+                  <span class="font-display text-sm font-bold text-slate-900 sm:text-base">“Hút ít thì không sao.”</span>
+                </span>
+                <i class="accordion-icon fa-solid fa-chevron-down text-slate-400 transition-transform duration-300"></i>
+              </button>
+              <div class="accordion-content grid grid-rows-[0fr] transition-all duration-300">
+                <div class="overflow-hidden">
+                  <div class="border-t border-dashed border-slate-200 px-5 py-4 sm:pl-16">
+                    <p class="flex items-start gap-3 text-sm leading-relaxed text-slate-600">
+                      <span class="mt-0.5 flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-emerald-100 text-emerald-600"><i class="fa-solid fa-check"></i></span>
+                      <span><b class="text-emerald-700">Sự thật:</b> Dù chỉ 1 điếu thuốc mỗi ngày vẫn làm tổn thương mạch máu, tăng nguy cơ bệnh tim và đột quỵ đáng kể so với người không hút.</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm transition hover:border-emerald-300">
+              <button type="button" class="accordion-btn flex w-full items-center justify-between gap-4 px-5 py-4 text-left" aria-expanded="false">
+                <span class="flex items-start gap-3">
+                  <span class="mt-0.5 flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-rose-100 text-rose-600"><i class="fa-solid fa-comment"></i></span>
+                  <span class="font-display text-sm font-bold text-slate-900 sm:text-base">“Vape giúp cai thuốc lá hiệu quả.”</span>
+                </span>
+                <i class="accordion-icon fa-solid fa-chevron-down text-slate-400 transition-transform duration-300"></i>
+              </button>
+              <div class="accordion-content grid grid-rows-[0fr] transition-all duration-300">
+                <div class="overflow-hidden">
+                  <div class="border-t border-dashed border-slate-200 px-5 py-4 sm:pl-16">
+                    <p class="flex items-start gap-3 text-sm leading-relaxed text-slate-600">
+                      <span class="mt-0.5 flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-emerald-100 text-emerald-600"><i class="fa-solid fa-check"></i></span>
+                      <span><b class="text-emerald-700">Sự thật:</b> Vape chưa được công nhận là biện pháp cai an toàn. Thực tế, nhiều người dùng song song cả hai loại (dùng kép) và phơi nhiễm độc chất nhiều hơn.</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm transition hover:border-emerald-300">
+              <button type="button" class="accordion-btn flex w-full items-center justify-between gap-4 px-5 py-4 text-left" aria-expanded="false">
+                <span class="flex items-start gap-3">
+                  <span class="mt-0.5 flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-rose-100 text-rose-600"><i class="fa-solid fa-comment"></i></span>
+                  <span class="font-display text-sm font-bold text-slate-900 sm:text-base">“Thuốc lá điện tử không chứa nicotine.”</span>
+                </span>
+                <i class="accordion-icon fa-solid fa-chevron-down text-slate-400 transition-transform duration-300"></i>
+              </button>
+              <div class="accordion-content grid grid-rows-[0fr] transition-all duration-300">
+                <div class="overflow-hidden">
+                  <div class="border-t border-dashed border-slate-200 px-5 py-4 sm:pl-16">
+                    <p class="flex items-start gap-3 text-sm leading-relaxed text-slate-600">
+                      <span class="mt-0.5 flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-emerald-100 text-emerald-600"><i class="fa-solid fa-check"></i></span>
+                      <span><b class="text-emerald-700">Sự thật:</b> Nhiều sản phẩm chứa nicotine muối nồng độ cao — 1 pod có thể tương đương lượng nicotine của cả bao thuốc lá truyền thống.</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm transition hover:border-emerald-300">
+              <button type="button" class="accordion-btn flex w-full items-center justify-between gap-4 px-5 py-4 text-left" aria-expanded="false">
+                <span class="flex items-start gap-3">
+                  <span class="mt-0.5 flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-rose-100 text-rose-600"><i class="fa-solid fa-comment"></i></span>
+                  <span class="font-display text-sm font-bold text-slate-900 sm:text-base">“Hút thuốc là quyền tự do cá nhân.”</span>
+                </span>
+                <i class="accordion-icon fa-solid fa-chevron-down text-slate-400 transition-transform duration-300"></i>
+              </button>
+              <div class="accordion-content grid grid-rows-[0fr] transition-all duration-300">
+                <div class="overflow-hidden">
+                  <div class="border-t border-dashed border-slate-200 px-5 py-4 sm:pl-16">
+                    <p class="flex items-start gap-3 text-sm leading-relaxed text-slate-600">
+                      <span class="mt-0.5 flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-emerald-100 text-emerald-600"><i class="fa-solid fa-check"></i></span>
+                      <span><b class="text-emerald-700">Sự thật:</b> Khói thuốc của bạn ảnh hưởng trực tiếp đến người thân và trẻ em xung quanh — quyền cá nhân dừng lại khi làm hại sức khỏe người khác.</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== SECTION 4: CÔNG CỤ & LỜI KHUYÊN CAI THUỐC ===================== -->
+    <section id="cai-thuoc" class="bg-gradient-to-b from-emerald-50/60 to-white py-20 lg:py-28">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="reveal mx-auto max-w-2xl text-center">
+          <span class="inline-flex items-center gap-2 rounded-full bg-emerald-100 px-4 py-1.5 text-xs font-bold uppercase tracking-widest text-emerald-700">
+            <i class="fa-solid fa-seedling"></i> Phần 04 · Hành động
+          </span>
+          <h2 class="mt-4 font-display text-3xl font-black text-slate-900 sm:text-4xl lg:text-5xl">
+            Bộ Công Cụ &amp; Lời Khuyên <span class="text-emerald-600">Cai Thuốc</span>
+          </h2>
+          <p class="mt-4 text-slate-600">Từ bỏ thuốc lá là quyết định tốt nhất cho sức khỏe — và ví tiền của bạn.</p>
+        </div>
+
+        <div class="mt-12 grid gap-8 lg:grid-cols-2">
+          <!-- Công cụ tính tiền tiết kiệm -->
+          <div class="reveal rounded-3xl border border-slate-100 bg-white p-6 shadow-xl shadow-slate-900/5 sm:p-8">
+            <div class="flex items-center gap-3">
+              <div class="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-emerald-100 text-xl text-emerald-600"><i class="fa-solid fa-calculator"></i></div>
+              <div>
+                <h3 class="font-display text-xl font-extrabold text-slate-900">Công Cụ Tính Tiền Tiết Kiệm</h3>
+                <p class="text-xs font-medium text-slate-500">Bạn sẽ giữ lại được bao nhiêu tiền khi bỏ thuốc?</p>
+              </div>
+            </div>
+
+            <div class="mt-6 grid gap-4 sm:grid-cols-3">
+              <div>
+                <label for="so-dieu-ngay" class="mb-1.5 block text-xs font-bold uppercase tracking-wide text-slate-500">Số điếu / ngày</label>
+                <input id="so-dieu-ngay" type="number" min="0" step="1" value="10" class="w-full rounded-xl border border-slate-200 bg-slate-50 px-4 py-3 text-sm font-semibold text-slate-900 outline-none transition focus:border-emerald-500 focus:bg-white focus:ring-4 focus:ring-emerald-500/10" />
+              </div>
+              <div>
+                <label for="gia-bao" class="mb-1.5 block text-xs font-bold uppercase tracking-wide text-slate-500">Giá 1 bao (đồng)</label>
+                <input id="gia-bao" type="number" min="0" step="500" value="30000" class="w-full rounded-xl border border-slate-200 bg-slate-50 px-4 py-3 text-sm font-semibold text-slate-900 outline-none transition focus:border-emerald-500 focus:bg-white focus:ring-4 focus:ring-emerald-500/10" />
+              </div>
+              <div>
+                <label for="dieu-trong-bao" class="mb-1.5 block text-xs font-bold uppercase tracking-wide text-slate-500">Số điếu / bao</label>
+                <input id="dieu-trong-bao" type="number" min="1" step="1" value="20" class="w-full rounded-xl border border-slate-200 bg-slate-50 px-4 py-3 text-sm font-semibold text-slate-900 outline-none transition focus:border-emerald-500 focus:bg-white focus:ring-4 focus:ring-emerald-500/10" />
+              </div>
+            </div>
+
+            <p id="chi-phi-hang-ngay" class="mt-4 text-center text-sm font-semibold text-slate-600"></p>
+
+            <div class="mt-4 grid grid-cols-3 gap-3">
+              <div class="rounded-2xl border border-emerald-100 bg-emerald-50 p-4 text-center">
+                <p class="text-[11px] font-bold uppercase tracking-wider text-emerald-700">Mỗi tháng</p>
+                <p id="tiet-kiem-thang" class="mt-1 font-display text-base font-black text-emerald-700 sm:text-lg">0₫</p>
+              </div>
+              <div class="rounded-2xl border border-sky-100 bg-sky-50 p-4 text-center">
+                <p class="text-[11px] font-bold uppercase tracking-wider text-sky-700">Mỗi năm</p>
+                <p id="tiet-kiem-nam" class="mt-1 font-display text-base font-black text-sky-700 sm:text-lg">0₫</p>
+              </div>
+              <div class="rounded-2xl bg-slate-900 p-4 text-center">
+                <p class="text-[11px] font-bold uppercase tracking-wider text-slate-400">Trong 10 năm</p>
+                <p id="tiet-kiem-10nam" class="mt-1 font-display text-base font-black text-white sm:text-lg">0₫</p>
+              </div>
+            </div>
+
+            <p class="mt-6 text-sm font-bold text-slate-900"><i class="fa-solid fa-gift mr-1.5 text-emerald-600"></i>Số tiền tiết kiệm mỗi năm có thể giúp bạn:</p>
+            <ul id="phan-thuong" class="mt-3 space-y-2"></ul>
+
+            <p class="mt-5 rounded-xl border border-amber-100 bg-amber-50 px-4 py-3 text-xs leading-relaxed text-amber-800">
+              <i class="fa-solid fa-lightbulb mr-1"></i> Chưa kể chi phí khám chữa bệnh, thuốc men và giá trị sức khỏe mà thuốc lá lấy đi của bạn.
+            </p>
+          </div>
+
+          <!-- Lộ trình 5 bước -->
+          <div class="reveal" style="transition-delay:120ms">
+            <h3 class="font-display text-xl font-extrabold text-slate-900">Lộ Trình 5 Bước Vượt Qua Cơn Thèm</h3>
+            <ol class="mt-6 space-y-4">
+              <li class="flex gap-4 rounded-2xl border border-slate-100 bg-white p-5 shadow-sm transition hover:border-emerald-200 hover:shadow-md">
+                <span class="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-emerald-100 font-display text-lg font-black text-emerald-600">1</span>
+                <div>
+                  <h4 class="font-display font-bold text-slate-900"><i class="fa-solid fa-bullseye mr-1.5 text-emerald-600"></i>Chọn ngày bỏ thuốc</h4>
+                  <p class="mt-1 text-sm leading-relaxed text-slate-600">Hãy chọn một ngày cụ thể trong vòng 2 tuần tới và viết ra lý do bạn muốn bỏ — dán ở nơi dễ nhìn thấy nhất.</p>
+                </div>
+              </li>
+              <li class="flex gap-4 rounded-2xl border border-slate-100 bg-white p-5 shadow-sm transition hover:border-sky-200 hover:shadow-md">
+                <span class="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-sky-100 font-display text-lg font-black text-sky-600">2</span>
+                <div>
+                  <h4 class="font-display font-bold text-slate-900"><i class="fa-solid fa-broom mr-1.5 text-sky-600"></i>Dọn sạch môi trường</h4>
+                  <p class="mt-1 text-sm leading-relaxed text-slate-600">Vứt hết thuốc lá, vape, bật lửa, gạt tàn. Tránh xa những nơi, những người dễ khiến bạn hút lại.</p>
+                </div>
+              </li>
+              <li class="flex gap-4 rounded-2xl border border-slate-100 bg-white p-5 shadow-sm transition hover:border-emerald-200 hover:shadow-md">
+                <span class="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-emerald-100 font-display text-lg font-black text-emerald-600">3</span>
+                <div>
+                  <h4 class="font-display font-bold text-slate-900"><i class="fa-solid fa-glass-water mr-1.5 text-emerald-600"></i>Vượt qua cơn thèm</h4>
+                  <p class="mt-1 text-sm leading-relaxed text-slate-600">Cơn thèm chỉ kéo dài 3–5 phút: uống một cốc nước, hít thở sâu 10 lần, nhai kẹo cao su hoặc đánh răng ngay.</p>
+                </div>
+              </li>
+              <li class="flex gap-4 rounded-2xl border border-slate-100 bg-white p-5 shadow-sm transition hover:border-sky-200 hover:shadow-md">
+                <span class="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-sky-100 font-display text-lg font-black text-sky-600">4</span>
+                <div>
+                  <h4 class="font-display font-bold text-slate-900"><i class="fa-solid fa-person-running mr-1.5 text-sky-600"></i>Vận động &amp; ăn uống lành mạnh</h4>
+                  <p class="mt-1 text-sm leading-relaxed text-slate-600">Đi bộ 30 phút mỗi ngày, ăn nhiều rau quả giúp giảm căng thẳng và hạn chế cảm giác thèm nicotine.</p>
+                </div>
+              </li>
+              <li class="flex gap-4 rounded-2xl border border-slate-100 bg-white p-5 shadow-sm transition hover:border-emerald-200 hover:shadow-md">
+                <span class="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-emerald-100 font-display text-lg font-black text-emerald-600">5</span>
+                <div>
+                  <h4 class="font-display font-bold text-slate-900"><i class="fa-solid fa-headset mr-1.5 text-emerald-600"></i>Tìm sự hỗ trợ</h4>
+                  <p class="mt-1 text-sm leading-relaxed text-slate-600">Nói với gia đình, bạn bè về quyết định của bạn và gọi tổng đài miễn phí 1800 6606 để được chuyên gia đồng hành.</p>
+                </div>
+              </li>
+            </ol>
+
+            <div class="mt-6 flex flex-wrap gap-2">
+              <span class="rounded-full border border-emerald-200 bg-emerald-50 px-3.5 py-1.5 text-xs font-semibold text-emerald-700"><i class="fa-solid fa-stopwatch mr-1"></i>Quy tắc 5 phút</span>
+              <span class="rounded-full border border-sky-200 bg-sky-50 px-3.5 py-1.5 text-xs font-semibold text-sky-700"><i class="fa-solid fa-glass-water mr-1"></i>Uống nhiều nước</span>
+              <span class="rounded-full border border-emerald-200 bg-emerald-50 px-3.5 py-1.5 text-xs font-semibold text-emerald-700"><i class="fa-solid fa-wind mr-1"></i>Hít thở sâu 10 lần</span>
+              <span class="rounded-full border border-sky-200 bg-sky-50 px-3.5 py-1.5 text-xs font-semibold text-sky-700"><i class="fa-solid fa-tooth mr-1"></i>Đánh răng ngay khi thèm</span>
+              <span class="rounded-full border border-emerald-200 bg-emerald-50 px-3.5 py-1.5 text-xs font-semibold text-emerald-700"><i class="fa-solid fa-mug-hot mr-1"></i>Tránh cà phê – rượu bia giai đoạn đầu</span>
+              <span class="rounded-full border border-sky-200 bg-sky-50 px-3.5 py-1.5 text-xs font-semibold text-sky-700"><i class="fa-solid fa-book mr-1"></i>Ghi nhật ký cai thuốc</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== SECTION 5: TRỢ GIÚP & ĐƯỜNG DÂY NÓNG ===================== -->
+    <section id="lien-he" class="bg-gradient-to-b from-white to-emerald-50/60 py-20 lg:py-28">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="reveal mx-auto max-w-2xl text-center">
+          <span class="inline-flex items-center gap-2 rounded-full bg-indigo-100 px-4 py-1.5 text-xs font-bold uppercase tracking-widest text-indigo-700">
+            <i class="fa-solid fa-hand-holding-heart"></i> Phần 05 · Trợ giúp
+          </span>
+          <h2 class="mt-4 font-display text-3xl font-black text-slate-900 sm:text-4xl lg:text-5xl">
+            Góc Trợ Giúp &amp; <span class="text-emerald-600">Đường Dây Nóng</span>
+          </h2>
+          <p class="mt-4 text-slate-600">Bạn không đơn độc trên hành trình này — sự hỗ trợ chuyên môn luôn sẵn sàng, hoàn toàn miễn phí.</p>
+        </div>
+
+        <div class="mt-12 grid gap-8 lg:grid-cols-2">
+          <!-- Đường dây nóng -->
+          <div class="reveal relative overflow-hidden rounded-3xl bg-gradient-to-br from-emerald-700 via-emerald-600 to-sky-600 p-8 text-white shadow-2xl shadow-emerald-600/30">
+            <div class="pointer-events-none absolute -right-16 -top-16 h-56 w-56 rounded-full bg-white/10"></div>
+            <div class="pointer-events-none absolute -bottom-20 -left-10 h-48 w-48 rounded-full bg-white/10"></div>
+            <div class="relative">
+              <i class="fa-solid fa-phone-volume text-3xl"></i>
+              <h3 class="mt-4 font-display text-xl font-extrabold">Tổng đài tư vấn cai thuốc lá miễn phí</h3>
+              <a href="tel:18006606" class="mt-5 inline-flex items-center gap-3 rounded-2xl bg-white/15 px-6 py-4 font-display text-4xl font-black tracking-wider backdrop-blur transition hover:bg-white/25 sm:text-5xl">
+                <i class="fa-solid fa-phone text-2xl"></i> 1800 6606
+              </a>
+              <p class="mt-4 text-sm leading-relaxed text-emerald-50">Gọi miễn phí để được các chuyên gia của Bệnh viện Bạch Mai và Bệnh viện Chợ Rẫy tư vấn cách cai thuốc lá hiệu quả.</p>
+              <ul class="mt-5 space-y-2 text-sm">
+                <li><i class="fa-solid fa-circle-check mr-2 text-emerald-200"></i>Miễn phí 100% cuộc gọi</li>
+                <li><i class="fa-solid fa-circle-check mr-2 text-emerald-200"></i>Tư vấn bởi chuyên gia y tế</li>
+                <li><i class="fa-solid fa-circle-check mr-2 text-emerald-200"></i>Thông tin của bạn được bảo mật</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Form cam kết -->
+          <div class="reveal rounded-3xl border border-slate-100 bg-white p-6 shadow-xl shadow-slate-900/5 sm:p-8" style="transition-delay:120ms">
+            <h3 class="font-display text-xl font-extrabold text-slate-900">Lời Cam Kết Từ Bỏ Khói Thuốc</h3>
+            <p id="dem-cam-ket" class="mt-1 text-sm font-semibold text-emerald-600"></p>
+
+            <form id="form-cam-ket" class="mt-6 space-y-4" novalidate>
+              <div>
+                <label for="ho-ten" class="mb-1.5 block text-xs font-bold uppercase tracking-wide text-slate-500">Họ và tên</label>
+                <input id="ho-ten" type="text" placeholder="Nguyễn Văn A" class="w-full rounded-xl border border-slate-200 bg-slate-50 px-4 py-3 text-sm font-semibold text-slate-900 outline-none transition focus:border-emerald-500 focus:bg-white focus:ring-4 focus:ring-emerald-500/10" />
+                <p id="loi-ho-ten" class="mt-1 hidden text-xs font-semibold text-rose-600">Vui lòng nhập họ tên (tối thiểu 2 ký tự).</p>
+              </div>
+              <div>
+                <label for="so-dien-thoai" class="mb-1.5 block text-xs font-bold uppercase tracking-wide text-slate-500">Số điện thoại</label>
+                <input id="so-dien-thoai" type="tel" placeholder="09xxxxxxxx" class="w-full rounded-xl border border-slate-200 bg-slate-50 px-4 py-3 text-sm font-semibold text-slate-900 outline-none transition focus:border-emerald-500 focus:bg-white focus:ring-4 focus:ring-emerald-500/10" />
+                <p id="loi-so-dien-thoai" class="mt-1 hidden text-xs font-semibold text-rose-600">Vui lòng nhập số điện thoại hợp lệ (10 số, bắt đầu bằng 0).</p>
+              </div>
+              <div>
+                <label for="loi-nhan" class="mb-1.5 block text-xs font-bold uppercase tracking-wide text-slate-500">Lời nhắn / lý do bạn muốn bỏ thuốc (không bắt buộc)</label>
+                <textarea id="loi-nhan" rows="3" placeholder="Vì gia đình, vì sức khỏe của chính mình..." class="w-full resize-none rounded-xl border border-slate-200 bg-slate-50 px-4 py-3 text-sm font-semibold text-slate-900 outline-none transition focus:border-emerald-500 focus:bg-white focus:ring-4 focus:ring-emerald-500/10"></textarea>
+              </div>
+              <button type="submit" class="w-full rounded-full bg-gradient-to-r from-emerald-600 to-sky-600 px-6 py-3.5 font-bold text-white shadow-lg shadow-emerald-500/25 transition hover:-translate-y-0.5 hover:shadow-xl">
+                <i class="fa-solid fa-hand-fist mr-2"></i>Tôi cam kết từ bỏ khói thuốc ngay hôm nay
+              </button>
+              <p class="text-center text-[11px] text-slate-400">Thông tin của bạn chỉ được lưu trên thiết bị để ghi nhận cam kết.</p>
+            </form>
+
+            <div id="thanh-cong" class="hidden rounded-2xl border border-emerald-200 bg-emerald-50 p-6 text-center">
+              <i class="fa-solid fa-circle-check text-4xl text-emerald-600"></i>
+              <p id="thanh-cong-noi-dung" class="mt-3 font-display font-extrabold text-slate-900">Cảm ơn bạn đã cam kết!</p>
+              <p class="mt-1 text-sm text-slate-600">Mỗi quyết tâm hôm nay là một bước tiến đến cuộc sống khỏe mạnh. Hãy gọi 1800 6606 khi cần hỗ trợ.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ===================== NGUỒN THAM KHẢO & DẪN CHỨNG ===================== -->
+    <section id="nguon-tham-khao" class="border-t border-slate-100 py-20 lg:py-24">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="reveal mx-auto max-w-2xl text-center">
+          <span class="inline-flex items-center gap-2 rounded-full bg-slate-100 px-4 py-1.5 text-xs font-bold uppercase tracking-widest text-slate-600">
+            <i class="fa-solid fa-book-open"></i> Phần bổ sung · Dẫn chứng
+          </span>
+          <h2 class="mt-4 font-display text-3xl font-black text-slate-900 sm:text-4xl lg:text-5xl">
+            Nguồn Tham Khảo &amp; <span class="text-emerald-600">Dẫn Chứng Khoa Học</span>
+          </h2>
+          <p class="mt-4 text-slate-600">Mọi số liệu trên trang đều được trích dẫn từ các tổ chức y tế uy tín — bấm vào từng nguồn để đọc bài gốc.</p>
+        </div>
+
+        <div class="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+          <a href="https://www.who.int/news-room/fact-sheets/detail/tobacco" target="_blank" rel="noopener" class="reveal group flex items-start gap-4 rounded-2xl border border-slate-100 bg-white p-5 shadow-sm transition hover:-translate-y-1 hover:border-emerald-200 hover:shadow-lg">
+            <span class="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-emerald-50 text-lg text-emerald-600"><i class="fa-solid fa-globe"></i></span>
+            <span class="min-w-0">
+              <span class="block text-[11px] font-bold uppercase tracking-wider text-slate-400">Tổ chức Y tế Thế giới (WHO)</span>
+              <span class="mt-0.5 block text-sm font-bold leading-snug text-slate-900 transition group-hover:text-emerald-700">Tờ thông tin về thuốc lá &amp; nicotine — số ca tử vong, hút thuốc thụ động</span>
+              <span class="mt-1 block truncate text-xs text-slate-400">who.int/news-room/fact-sheets/detail/tobacco</span>
+            </span>
+            <i class="fa-solid fa-arrow-up-right-from-square ml-auto mt-1 shrink-0 text-xs text-slate-300 transition group-hover:text-emerald-600"></i>
+          </a>
+
+          <a href="https://www.who.int/health-topics/tobacco" target="_blank" rel="noopener" class="reveal group flex items-start gap-4 rounded-2xl border border-slate-100 bg-white p-5 shadow-sm transition hover:-translate-y-1 hover:border-emerald-200 hover:shadow-lg" style="transition-delay:60ms">
+            <span class="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-emerald-50 text-lg text-emerald-600"><i class="fa-solid fa-globe"></i></span>
+            <span class="min-w-0">
+              <span class="block text-[11px] font-bold uppercase tracking-wider text-slate-400">Tổ chức Y tế Thế giới (WHO)</span>
+              <span class="mt-0.5 block text-sm font-bold leading-snug text-slate-900 transition group-hover:text-emerald-700">Chủ đề sức khỏe: Thuốc lá — tác hại và các biện pháp phòng chống</span>
+              <span class="mt-1 block truncate text-xs text-slate-400">who.int/health-topics/tobacco</span>
+            </span>
+            <i class="fa-solid fa-arrow-up-right-from-square ml-auto mt-1 shrink-0 text-xs text-slate-300 transition group-hover:text-emerald-600"></i>
+          </a>
+
+          <a href="https://tobaccoatlas.org/" target="_blank" rel="noopener" class="reveal group flex items-start gap-4 rounded-2xl border border-slate-100 bg-white p-5 shadow-sm transition hover:-translate-y-1 hover:border-emerald-200 hover:shadow-lg" style="transition-delay:120ms">
+            <span class="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-emerald-50 text-lg text-emerald-600"><i class="fa-solid fa-chart-column"></i></span>
+            <span class="min-w-0">
+              <span class="block text-[11px] font-bold uppercase tracking-wider text-slate-400">Tobacco Atlas</span>
+              <span class="mt-0.5 block text-sm font-bold leading-snug text-slate-900 transition group-hover:text-emerald-700">Bản đồ &amp; thống kê thuốc lá toàn cầu — số điếu thuốc được tiêu thụ</span>
+              <span class="mt-1 block truncate text-xs text-slate-400">tobaccoatlas.org</span>
+            </span>
+            <i class="fa-solid fa-arrow-up-right-from-square ml-auto mt-1 shrink-0 text-xs text-slate-300 transition group-hover:text-emerald-600"></i>
+          </a>
+
+          <a href="https://archive.cdc.gov/www_cdc_gov/tobacco/basic_information/e-cigarettes/severe-lung-disease.html" target="_blank" rel="noopener" class="reveal group flex items-start gap-4 rounded-2xl border border-slate-100 bg-white p-5 shadow-sm transition hover:-translate-y-1 hover:border-emerald-200 hover:shadow-lg">
+            <span class="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-rose-50 text-lg text-rose-600"><i class="fa-solid fa-lungs-virus"></i></span>
+            <span class="min-w-0">
+              <span class="block text-[11px] font-bold uppercase tracking-wider text-slate-400">CDC Hoa Kỳ</span>
+              <span class="mt-0.5 block text-sm font-bold leading-snug text-slate-900 transition group-hover:text-emerald-700">Bùng phát tổn thương phổi liên quan đến vape (EVALI)</span>
+              <span class="mt-1 block truncate text-xs text-slate-400">archive.cdc.gov — EVALI outbreak</span>
+            </span>
+            <i class="fa-solid fa-arrow-up-right-from-square ml-auto mt-1 shrink-0 text-xs text-slate-300 transition group-hover:text-emerald-600"></i>
+          </a>
+
+          <a href="https://www.cdc.gov/mmwr/volumes/68/wr/mm6841e3.htm" target="_blank" rel="noopener" class="reveal group flex items-start gap-4 rounded-2xl border border-slate-100 bg-white p-5 shadow-sm transition hover:-translate-y-1 hover:border-emerald-200 hover:shadow-lg" style="transition-delay:60ms">
+            <span class="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-rose-50 text-lg text-rose-600"><i class="fa-solid fa-file-lines"></i></span>
+            <span class="min-w-0">
+              <span class="block text-[11px] font-bold uppercase tracking-wider text-slate-400">CDC Hoa Kỳ — MMWR</span>
+              <span class="mt-0.5 block text-sm font-bold leading-snug text-slate-900 transition group-hover:text-emerald-700">Hướng dẫn lâm sàng về tổn thương phổi cấp liên quan e-cigarette</span>
+              <span class="mt-1 block truncate text-xs text-slate-400">cdc.gov/mmwr — vol. 68</span>
+            </span>
+            <i class="fa-solid fa-arrow-up-right-from-square ml-auto mt-1 shrink-0 text-xs text-slate-300 transition group-hover:text-emerald-600"></i>
+          </a>
+
+          <a href="http://vinacosh.gov.vn/vi/" target="_blank" rel="noopener" class="reveal group flex items-start gap-4 rounded-2xl border border-slate-100 bg-white p-5 shadow-sm transition hover:-translate-y-1 hover:border-emerald-200 hover:shadow-lg" style="transition-delay:120ms">
+            <span class="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-sky-50 text-lg text-sky-600"><i class="fa-solid fa-flag"></i></span>
+            <span class="min-w-0">
+              <span class="block text-[11px] font-bold uppercase tracking-wider text-slate-400">Quỹ Phòng, chống tác hại thuốc lá — Bộ Y tế</span>
+              <span class="mt-0.5 block text-sm font-bold leading-snug text-slate-900 transition group-hover:text-emerald-700">Số liệu tử vong do thuốc lá tại Việt Nam, tài liệu truyền thông chính thức</span>
+              <span class="mt-1 block truncate text-xs text-slate-400">vinacosh.gov.vn</span>
+            </span>
+            <i class="fa-solid fa-arrow-up-right-from-square ml-auto mt-1 shrink-0 text-xs text-slate-300 transition group-hover:text-emerald-600"></i>
+          </a>
+
+          <a href="https://pubmed.ncbi.nlm.nih.gov/10617536/" target="_blank" rel="noopener" class="reveal group flex items-start gap-4 rounded-2xl border border-slate-100 bg-white p-5 shadow-sm transition hover:-translate-y-1 hover:border-emerald-200 hover:shadow-lg">
+            <span class="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-emerald-50 text-lg text-emerald-600"><i class="fa-solid fa-flask"></i></span>
+            <span class="min-w-0">
+              <span class="block text-[11px] font-bold uppercase tracking-wider text-slate-400">BMJ — Tạp chí Y khoa Anh (nghiên cứu Doll et al., 2000)</span>
+              <span class="mt-0.5 block text-sm font-bold leading-snug text-slate-900 transition group-hover:text-emerald-700">Nghiên cứu 50 năm: mỗi điếu thuốc làm mất khoảng 11 phút tuổi thọ</span>
+              <span class="mt-1 block truncate text-xs text-slate-400">pubmed.ncbi.nlm.nih.gov/10617536</span>
+            </span>
+            <i class="fa-solid fa-arrow-up-right-from-square ml-auto mt-1 shrink-0 text-xs text-slate-300 transition group-hover:text-emerald-600"></i>
+          </a>
+
+          <a href="https://ourworldindata.org/smoking" target="_blank" rel="noopener" class="reveal group flex items-start gap-4 rounded-2xl border border-slate-100 bg-white p-5 shadow-sm transition hover:-translate-y-1 hover:border-emerald-200 hover:shadow-lg" style="transition-delay:60ms">
+            <span class="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-emerald-50 text-lg text-emerald-600"><i class="fa-solid fa-chart-line"></i></span>
+            <span class="min-w-0">
+              <span class="block text-[11px] font-bold uppercase tracking-wider text-slate-400">Our World in Data</span>
+              <span class="mt-0.5 block text-sm font-bold leading-snug text-slate-900 transition group-hover:text-emerald-700">Thống kê hút thuốc toàn cầu — khoảng 8 triệu ca tử vong sớm mỗi năm</span>
+              <span class="mt-1 block truncate text-xs text-slate-400">ourworldindata.org/smoking</span>
+            </span>
+            <i class="fa-solid fa-arrow-up-right-from-square ml-auto mt-1 shrink-0 text-xs text-slate-300 transition group-hover:text-emerald-600"></i>
+          </a>
+        </div>
+
+        <p class="reveal mt-8 text-center text-xs text-slate-400">Các liên kết đã được kiểm tra còn hoạt động vào tháng 10/2026.</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="bg-slate-950 py-12 text-slate-400">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="grid gap-10 md:grid-cols-3">
+        <div>
+          <a href="#trang-chu" class="flex items-center gap-2.5">
+            <img src="images/logo.png" alt="Logo Sống Khỏe" class="h-11 w-11 rounded-2xl" />
+            <span class="leading-tight">
+              <span class="block font-display text-lg font-extrabold text-white">Sống Khỏe</span>
+              <span class="block text-[11px] font-semibold uppercase tracking-widest text-emerald-400">Không Khói Thuốc</span>
+            </span>
+          </a>
+          <p class="mt-4 text-sm leading-relaxed">Trang thông tin truyền thông giáo dục sức khỏe về tác hại của thuốc lá và thuốc lá điện tử, góp phần xây dựng cộng đồng không khói thuốc.</p>
+        </div>
+
+        <div>
+          <h4 class="font-display text-sm font-bold uppercase tracking-wider text-white">Liên kết nhanh</h4>
+          <ul class="mt-4 grid grid-cols-2 gap-2 text-sm">
+            <li><a href="#trang-chu" class="transition hover:text-emerald-400">Trang chủ</a></li>
+            <li><a href="#thuoc-la" class="transition hover:text-emerald-400">Thuốc lá truyền thống</a></li>
+            <li><a href="#vape" class="transition hover:text-emerald-400">Thuốc lá điện tử</a></li>
+            <li><a href="#su-that" class="transition hover:text-emerald-400">So sánh &amp; Sự thật</a></li>
+            <li><a href="#cai-thuoc" class="transition hover:text-emerald-400">Lời khuyên cai thuốc</a></li>
+            <li><a href="#lien-he" class="transition hover:text-emerald-400">Liên hệ – Trợ giúp</a></li>
+            <li><a href="#thong-ke" class="transition hover:text-emerald-400">Thống kê trực tiếp</a></li>
+            <li><a href="#nguon-tham-khao" class="transition hover:text-emerald-400">Nguồn tham khảo</a></li>
+            <li><a href="ma-tuy.html" class="transition hover:text-rose-400">Phòng chống ma túy</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="font-display text-sm font-bold uppercase tracking-wider text-white">Chia sẻ chiến dịch</h4>
+          <p class="mt-2 text-sm">Lan tỏa thông điệp “Sống Khỏe – Không Khói Thuốc” đến người thân, bạn bè.</p>
+          <div class="mt-4 flex gap-3">
+            <button type="button" data-share="facebook" aria-label="Chia sẻ lên Facebook" class="flex h-10 w-10 items-center justify-center rounded-full border border-white/10 bg-white/5 text-slate-300 transition hover:border-emerald-400 hover:bg-emerald-500 hover:text-white"><i class="fa-brands fa-facebook-f"></i></button>
+            <button type="button" data-share="x" aria-label="Chia sẻ lên X (Twitter)" class="flex h-10 w-10 items-center justify-center rounded-full border border-white/10 bg-white/5 text-slate-300 transition hover:border-emerald-400 hover:bg-emerald-500 hover:text-white"><i class="fa-brands fa-x-twitter"></i></button>
+            <button type="button" data-share="native" aria-label="Chia sẻ qua ứng dụng" class="flex h-10 w-10 items-center justify-center rounded-full border border-white/10 bg-white/5 text-slate-300 transition hover:border-emerald-400 hover:bg-emerald-500 hover:text-white"><i class="fa-solid fa-share-nodes"></i></button>
+            <button type="button" data-share="copy" aria-label="Sao chép liên kết" class="flex h-10 w-10 items-center justify-center rounded-full border border-white/10 bg-white/5 text-slate-300 transition hover:border-emerald-400 hover:bg-emerald-500 hover:text-white"><i class="fa-solid fa-link"></i></button>
+          </div>
+          <a href="tel:18006606" class="mt-4 inline-flex items-center gap-2 rounded-full border border-emerald-500/30 bg-emerald-500/10 px-4 py-2 text-sm font-bold text-emerald-400 transition hover:bg-emerald-500/20">
+            <i class="fa-solid fa-phone-volume"></i> 1800 6606
+          </a>
+        </div>
+      </div>
+
+      <div class="mt-10 border-t border-white/10 pt-6 text-center text-xs leading-relaxed">
+        <p>© 2026 Sống Khỏe – Không Khói Thuốc. Trang web mang tính chất giáo dục sức khỏe cộng đồng, không thay thế tư vấn y tế chuyên môn.</p>
+        <p class="mt-2 text-slate-500">Trang thuộc sự quản lý và phát triển bởi <b class="text-emerald-400">Nguyễn Hải Đăng</b></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Nút liên hệ nổi ở góc -->
+  <div class="fixed bottom-6 left-6 z-40">
+    <div id="bang-lien-he" class="mb-3 hidden w-64 overflow-hidden rounded-2xl border border-slate-100 bg-white shadow-2xl shadow-slate-900/20">
+      <div class="bg-gradient-to-r from-emerald-600 to-sky-600 px-4 py-3 text-white">
+        <p class="text-sm font-bold">Liên hệ với chúng tôi</p>
+        <p class="text-[11px] text-emerald-50">Gọi hoặc nhắn tin — luôn sẵn sàng hỗ trợ</p>
+      </div>
+      <div class="space-y-2 p-4">
+        <a href="tel:0966023807" class="flex items-center justify-center gap-2 rounded-xl bg-emerald-50 px-4 py-3 font-display text-lg font-black text-emerald-700 transition hover:bg-emerald-100">
+          <i class="fa-solid fa-phone-volume"></i> 0966 023 807
+        </a>
+        <a href="https://www.facebook.com/share/1Dooap2s8w/" target="_blank" rel="noopener" class="flex items-center justify-center gap-2 rounded-xl bg-sky-50 px-4 py-2.5 text-sm font-bold text-sky-700 transition hover:bg-sky-100">
+          <i class="fa-brands fa-facebook-f"></i> Nhắn tin Facebook
+        </a>
+        <div class="border-t border-dashed border-slate-200 pt-2">
+          <p class="text-center text-[11px] font-semibold text-slate-500">Tổng đài cai thuốc miễn phí</p>
+          <a href="tel:18006606" class="mt-1 flex items-center justify-center gap-2 rounded-xl bg-slate-50 px-4 py-2 text-sm font-bold text-slate-700 transition hover:bg-slate-100">
+            <i class="fa-solid fa-headset"></i> 1800 6606
+          </a>
+        </div>
+      </div>
+    </div>
+    <button id="nut-lien-he" type="button" aria-label="Liên hệ hỗ trợ" aria-expanded="false" class="ml-auto flex h-14 w-14 items-center justify-center rounded-full bg-gradient-to-br from-emerald-600 to-sky-600 text-2xl text-white shadow-xl shadow-emerald-600/40 transition hover:scale-105">
+      <i class="fa-solid fa-headset"></i>
+    </button>
+  </div>
+
+  <!-- Nút lên đầu trang -->
+  <button id="btn-top" type="button" aria-label="Lên đầu trang" class="fixed bottom-6 right-6 z-40 hidden h-12 w-12 items-center justify-center rounded-full bg-slate-900 text-white shadow-xl transition hover:bg-emerald-600">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <!-- Toast thông báo -->
+  <div id="toast" class="fixed bottom-6 left-1/2 z-50 hidden -translate-x-1/2 items-center gap-2 rounded-full bg-slate-900 px-5 py-3 text-sm font-semibold text-white shadow-2xl">
+    <i class="fa-solid fa-circle-check text-emerald-400"></i><span id="toast-noi-dung">Đã sao chép liên kết!</span>
+  </div>
+
+  <!-- JS đặc thù trang chủ (accordion, công cụ tính tiền, form cam kết, thống kê trực tiếp) -->
+  <script src="assets/js/trang-chu.js" defer></script>
+  <!-- JS dùng chung (menu, reveal, đếm số, liên hệ nổi, chia sẻ) -->
+  <script src="assets/js/site.js" defer></script>
+</body>
+</html>

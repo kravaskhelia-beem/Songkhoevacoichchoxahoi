@@ -1,0 +1,13 @@
+{
+  "name": "song-khoe-khong-khoi-thuoc",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Website tuyên truyền: Sống khỏe - không khói thuốc, không ma túy",
+  "scripts": {
+    "build:css": "tailwindcss -i ./src/styles.css -o ./assets/css/main.min.css --minify",
+    "watch:css": "tailwindcss -i ./src/styles.css -o ./assets/css/main.min.css --watch"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.17"
+  }
+}

@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# Domain chính thức của chiến dịch
+Sitemap: https://song-khoe-xyz.vercel.app/sitemap.xml
